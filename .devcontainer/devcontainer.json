@@ -7,10 +7,11 @@
     "dockerfile": "Dockerfile"
   },
   "customizations": {
-    // Configure properties specific to VS Code.
     "vscode": {
-      // Set *default* container specific settings.json values on container create.
-      "settings": {},
+      "settings": {
+        "extensions.ignoreRecommendations": true, // Prevents syncing of recommended extensions.
+        "extensions.autoUpdate": false // Optional: disables automatic updates for extensions.
+      },
       "extensions": ["noir-lang.vscode-noir"]
     }
   }
