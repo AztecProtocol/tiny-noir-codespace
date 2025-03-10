@@ -1,18 +1,21 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
 {
-  "name": "Existing Dockerfile",
-  "build": {
-    "context": ".",
-    "dockerfile": "Dockerfile"
-  },
-  "customizations": {
-    "vscode": {
-      "settings": {
-        "extensions.ignoreRecommendations": true, // Prevents syncing of recommended extensions.
-        "extensions.autoUpdate": false // Optional: disables automatic updates for extensions.
-      },
-      "extensions": ["noir-lang.vscode-noir"]
-    }
-  }
+	"name": "Existing Dockerfile",
+	"build": {
+		"context": ".",
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"extensions.ignoreRecommendations": true, // Prevents syncing of recommended extensions.
+				"extensions.autoUpdate": false // Optional: disables automatic updates for extensions.
+			},
+			"extensions": ["noir-lang.vscode-noir"]
+		}
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
+	}
 }
