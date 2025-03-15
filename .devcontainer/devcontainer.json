@@ -15,7 +15,5 @@
 			"extensions": ["noir-lang.vscode-noir"]
 		}
 	},
-	"features": {
-		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
-	}
+	"features": {}
 }
