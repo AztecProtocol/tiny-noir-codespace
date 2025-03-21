@@ -1,19 +1,15 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
 {
-	"name": "Existing Dockerfile",
-	"build": {
-		"context": ".",
-		"dockerfile": "Dockerfile"
-	},
+	"name": "Noir BB Dev Container",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 	"customizations": {
 		"vscode": {
-			"settings": {
-				"extensions.ignoreRecommendations": true, // Prevents syncing of recommended extensions.
-				"extensions.autoUpdate": false // Optional: disables automatic updates for extensions.
-			},
 			"extensions": ["noir-lang.vscode-noir"]
 		}
 	},
-	"features": {}
+	"features": {
+		"ghcr.io/signorecello/noir-bb-devcontainer-feature/barretenberg:1.1.2": {},
+		"ghcr.io/signorecello/noir-bb-devcontainer-feature/noir:1.1.2": {}
+	}
 }
