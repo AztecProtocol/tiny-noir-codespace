@@ -1,6 +1,9 @@
 {
 	"name": "Noirenberg Codespace",
-	"image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+	"build": {
+		"context": ".",
+		"dockerfile": "Dockerfile"
+	},
 	"customizations": {
 		"vscode": {
 			"extensions": ["noir-lang.vscode-noir"]
@@ -11,3 +14,4 @@
 		"ghcr.io/aztecprotocol/devcontainer-feature/noir:1.1.3": {}
 	}
 }
+ 
